@@ -4,10 +4,10 @@
     <title>neonion - Collaborative Semantic Annotations</title>
     <description>neonion is a user-centered, web application for the collaborative annotation of texts developed at the Human-Centered Computing group at Freie Universität Berlin.
 </description>
-    <link>http://sklind.github.io/neonion-internal/</link>
-    <atom:link href="http://sklind.github.io/neonion-internal/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Dec 2015 18:54:04 +0100</pubDate>
-    <lastBuildDate>Sun, 13 Dec 2015 18:54:04 +0100</lastBuildDate>
+    <link>http://sklind.github.io/</link>
+    <atom:link href="http://sklind.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 13 Dec 2015 23:00:45 +0100</pubDate>
+    <lastBuildDate>Sun, 13 Dec 2015 23:00:45 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Fri, 11 Dec 2015 10:10:29 +0100</pubDate>
-        <link>http://sklind.github.io/neonion-internal/jekyll/update/2015/12/11/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://sklind.github.io/neonion-internal/jekyll/update/2015/12/11/welcome-to-jekyll.html</guid>
+        <link>http://sklind.github.io/jekyll/update/2015/12/11/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://sklind.github.io/jekyll/update/2015/12/11/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>

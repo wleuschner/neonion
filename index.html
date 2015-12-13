@@ -10,9 +10,9 @@
   <meta name="description" content="neonion is a user-centered, web application for the collaborative annotation of texts developed at the Human-Centered Computing group at Freie Universität Berlin.
 ">
 
-  <link rel="stylesheet" href="/neonion-internal/css/main.css">
-  <link rel="canonical" href="http://sklind.github.io/neonion-internal/">
-  <link rel="alternate" type="application/rss+xml" title="neonion - Collaborative Semantic Annotations" href="http://sklind.github.io/neonion-internal/feed.xml">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://sklind.github.io/">
+  <link rel="alternate" type="application/rss+xml" title="neonion - Collaborative Semantic Annotations" href="http://sklind.github.io/feed.xml">
 </head>
 
 
@@ -22,7 +22,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/neonion-internal/">neonion - Collaborative Semantic Annotations</a>
+    <a class="site-title" href="/">neonion - Collaborative Semantic Annotations</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -36,7 +36,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/neonion-internal/about/">About</a>
+          <a class="page-link" href="/about/">About</a>
           
         
           
@@ -60,60 +60,84 @@
     
     <h1 id="neonion-tutorial">Neonion Tutorial</h1>
 
-<p>Please follow the <a href="https://github.com/FUB-HCC/neonion/tree/master">install instructions</a> first.</p>
+<p>The following tutorial explains step by step how to get started with neonion. If you want to run it on your machine, please follow the <a href="https://github.com/FUB-HCC/neonion/tree/master">install instructions</a> before continuing.</p>
 
-<p>The following tutorial explains neonion step by step. You will learn how to
-* login
-* import a document
-* use the user interface
-    * tool bar
-    * context bar
-* annotate
-    * annotation modes (highlight, comment, concept tagging)
-    * group concept
-* gain a deeper insight from your annotations
-    * overview of annotations
-    * CSV export
-* create your own vocabulary</p>
+<p>You will learn</p>
+
+<ul>
+  <li>how to register and login</li>
+  <li>how to import a document</li>
+  <li>how to use the user interface
+    <ul>
+      <li>the tool bar</li>
+      <li>the context bar</li>
+    </ul>
+  </li>
+  <li>how to annotate
+    <ul>
+      <li>which annotation modes are available</li>
+    </ul>
+  </li>
+  <li>how to gain a deeper insight from your annotations
+    <ul>
+      <li>giving an overview of your annotations</li>
+      <li>possibility of exporting your annotations via CSV</li>
+    </ul>
+  </li>
+  <li>how to create your own vocabulary</li>
+</ul>
 
 <h1 id="login">Login</h1>
 
-<p>Login to neonion using a predefined test account or sign up as a new user.</p>
+<p>Open the registration page <a href="http://neonion-new.imp.fu-berlin.de/accounts/register">here</a>. On the navigation bar to the left, you can choose to <strong>Sign Up</strong>, if you don’t already have an account. Once you registered with your email address and a password, you can change to the <strong>Sign In</strong> tab to login.</p>
 
-<p><img src="https://www.dropbox.com/s/qpyvjp3a7eahei6/register.png?dl=1" alt="" /></p>
+<p><img src="/images/1SignUp.png" alt="" /></p>
 
-<h1 id="import-a-document-to-annotate">Import a document to annotate</h1>
+<h1 id="import-a-document-to-your-workspace">Import a document to your workspace</h1>
 
-<p>Within your workspace upload a textfile <code>*.txt</code> or PDF you want to annotate.</p>
+<p>After logging into neonion, you can import the document you want to annotate. Supported formats are text files and PDFs. The workspace is divided into three parts:</p>
 
-<p><img src="https://www.dropbox.com/s/wy8qgdhty8kte2n/workspace.png?dl=1" alt="" /></p>
+<ul>
+  <li>My: all documents that you have uploaded</li>
+  <li>Public: selected documents that are accessible for all users</li>
+  <li>Groups: these are all the documents that were uploaded in groups that you belong to</li>
+</ul>
+
+<p>Public and group workspaces enable to work on a document collaboratively.</p>
+
+<p><img src="/images/2Workspace.png" alt="" /></p>
+
+<p>In this example, we will open the document <strong>Plato - Wikipedia</strong> in the <strong>Public</strong> workspace.</p>
+
+<p><img src="/images/3PublicDocs.png" alt="" /></p>
 
 <h1 id="user-interface">User Interface</h1>
 
-<p><img src="https://www.dropbox.com/s/byakjwysku87n7h/1.png?dl=1" alt="" /></p>
+<p>This is the annotation interface with the context bar on the top and the tool bar to the left.</p>
+
+<p><img src="/images/4Interface.png" alt="" /></p>
 
 <h2 id="tool-bar">tool bar</h2>
 
-<p>Provides several tools to support the annotation process.</p>
+<p>The <strong>tool bar</strong> provides several tools to support the annotation process. The symbols are explained top down.</p>
 
 <ul>
-  <li>Home: brings you back to the start page</li>
-  <li>NER: automatically assigns concepts to specific text parts</li>
-  <li>Contributers: display or hide the annotations of contributers</li>
-  <li>Annotation Mode: choose between Commenting, Highlighting and Concept Tagging</li>
-  <li>Jump to last Annotation: brings you to the last created annotation in this text</li>
+  <li><strong>Home</strong>: brings you back to your workspace</li>
+  <li><strong>Contributors</strong>: displays or hides the annotations of contributors</li>
+  <li><strong>Annotation Mode</strong>: changes between Commenting, Highlighting and Concept Tagging</li>
+  <li><strong>Jump to last Annotation</strong>: brings you to the last created annotation in this text</li>
 </ul>
 
 <h2 id="context-bar">context bar</h2>
 
-<p>Shows detailed information about this specific document.</p>
+<p>The <strong>context bar</strong> shows detailed information about this specific document.</p>
 
 <ul>
   <li>number of annotations</li>
-  <li>number of contributers</li>
-  <li>title</li>
-  <li>visibility (private, public or group)</li>
-  <li>user - shows the user ID of the person logged in</li>
+  <li>number of contributors</li>
+  <li>title of the document</li>
+  <li>visibility (private, public or group name)</li>
+  <li>user ID of the person logged in</li>
 </ul>
 
 <h1 id="start-annotating">Start Annotating</h1>
@@ -121,56 +145,66 @@
 <h2 id="annotation-modes">Annotation Modes</h2>
 
 <ul>
-  <li>Commenting (orange): adds a comment to the selected text. Shortcut: ﻿CTRL+ALT+A</li>
-  <li>Highlighting (yellow): highlights the selected text. Shortcut: ﻿CTRL+ALT+S</li>
-  <li>Concept Tagging (green): assigns a concept to the selected text. Shortcut: ﻿CTRL+ALT+D</li>
+  <li>Commenting: opens a free text field for adding a comment. <strong>Shortcut: ﻿CTRL+ALT+A</strong></li>
+  <li>Highlighting: emphasizes the selected text by color. <strong>Shortcut: ﻿CTRL+ALT+S</strong></li>
+  <li>Concept Tagging: assigns a concept to the selected text. <strong>Shortcut: ﻿CTRL+ALT+D</strong></li>
 </ul>
-
-<h3 id="add-highlights">Add Highlights</h3>
-
-<p><img src="https://www.dropbox.com/s/9s3k94qtivzlbqf/2.png?dl=1" alt="" /></p>
 
 <h3 id="switch-annotation-mode">Switch Annotation Mode</h3>
 
-<p>You can switch annotation mode through the tool bar or via shortcuts.</p>
+<p>You can switch the annotation mode through the tool bar or via the shortcuts.</p>
 
-<p><img src="https://www.dropbox.com/s/6pyt4klp8vcsqaw/3.png?dl=1" alt="" /></p>
+<p><img src="/images/5AnnotationMode.png" alt="" /></p>
+
+<h3 id="add-highlights">Add Highlights</h3>
+
+<p>Important text passages can be highlighted.</p>
+
+<p><img src="/images/5_1Highlight.png" alt="" /></p>
 
 <h3 id="add-comments">Add Comments</h3>
 
-<p><img src="https://www.dropbox.com/s/wn2t9m815l163if/4.png?dl=1" alt="" /></p>
+<p>You can also add a comment to a specific part of the text.</p>
+
+<p><img src="/images/5_2Comment.png" alt="" /></p>
 
 <p>If you hover over a comment, you can see the added text as well as the person who annotated this phrase.</p>
 
-<p><img src="https://www.dropbox.com/s/lm7t4tgovdq80mj/5.png?dl=1" alt="" /></p>
+<p><img src="/images/5_3Hover.png" alt="" /></p>
 
 <h3 id="concept-tagging">Concept Tagging</h3>
 
-<p>Assign a concept to a specific text part. In the following example, we assign the concept <strong>association</strong> (Zusammenschluss) to <strong>Max-Planck-Gesellschaft</strong>.</p>
+<p>Assign a concept to a specific text part. In the following example, we assign the concept <strong>association</strong> (Zusammenschluss) to the <strong>Max-Planck-Gesellschaft</strong>.</p>
 
-<p><img src="https://www.dropbox.com/s/m27m7k8isw3e935/1ConceptTagging.png?dl=1" alt="" /></p>
+<p><img src="/images/5_4ConceptTagging.png" alt="" /></p>
 
-<p>Text parts assigned to the concept <strong>person</strong> can be further identified with a unique entity (such as a specific person) by using a linked data identifier such as the Wikidata Identifier. If there’s no matching suggestion, the person can be categorized as <strong>Unknown Resource</strong>.</p>
+<p>Text parts assigned to the concept <strong>person</strong> can be further identified with a specific person by using a linked data identifier such as the Wikidata Identifier. If there’s no matching suggestion, the person can be categorized as <strong>Unknown Resource</strong>.</p>
 
 <p>Here, we link <strong>Otto Hahn</strong> to <strong>Otto Hahn *1879-03-08 deutscher Chemiker und Nobelpreisträger</strong> from Wikidata.</p>
 
-<p><img src="https://www.dropbox.com/s/h9mwofeh15poxg3/2ConceptTagging.png?dl=1" alt="" /></p>
+<p><img src="/images/5_5ConceptTagging.png" alt="" /></p>
 
 <p>In the third step, we can create a link between two entities through a predicate. The possibile predicates for each concept were previously defined in a vocabulary.</p>
 
-<p><img src="https://www.dropbox.com/s/4xqt36fpgw9mky7/3SPO.png?dl=1" alt="" /></p>
-
-<h2 id="group-concept">group concept</h2>
-
-<p>Working together on a document is enabled through the concept of groups. Click on <strong>Users</strong> in the navigation menu and select <strong>Groups</strong>. On this page, you have the possibility to create a new group or choose an existing one to add users to it.</p>
-
-<p><img src="https://www.dropbox.com/s/9bbk2q703b1uf4w/6Groups.png?dl=1" alt="" /></p>
+<p><img src="/images/6AddProperty.png" alt="" /></p>
 
 <h1 id="gain-a-deeper-insight-from-your-annotations">Gain a deeper insight from your annotations</h1>
 
+<p>The annotation overview enables you to analyze your results in more depth. On the page of the concept tags, annotations are grouped by concept and then by concept name.</p>
+
 <h2 id="overview-of-annotations">overview of annotations</h2>
 
+<p><img src="/images/7AnnotationsOverview.png" alt="" /></p>
+
+<p>The overview gives you further details about every single annotation. You can see how many times a specific concept name has been annotated in how many different documents and when a concept name was annotated for the last time.</p>
+
 <h2 id="csv-export">CSV export</h2>
+
+<p>To enable the reuse of your annotations, you have the possibility of exporting all annotations including metadata via CSV.</p>
+
+<p><img src="/images/7_1CSVexport.png" alt="" /></p>
+
+<p><img src="/images/7_2CSVfile.png" alt="" /></p>
 
 <h1 id="vocabularies">Vocabularies</h1>
 
@@ -180,7 +214,7 @@
 
 <p>Change to the tab <strong>Properties</strong> and click on the button <strong>Create Property</strong>.</p>
 
-<p><img src="https://www.dropbox.com/s/gkvyftw8kp4qasz/5CreateProperty.png?dl=1" alt="" /></p>
+<p><img src="/images/8CreateProperty.png" alt="" /></p>
 
 <p>Fill in a label, a description and assign concepts that should have this property. You can additionally add the inverse property.</p>
 
@@ -191,25 +225,25 @@
   <li><strong>Institution</strong> has <strong>member</strong> <strong>Person</strong></li>
 </ol>
 
-<p><img src="https://www.dropbox.com/s/x9ko21bq5v8t85a/6CreateProperty.png?dl=1" alt="" /></p>
+<p><img src="/images/9Property.png" alt="" /></p>
 
 <h1 id="create-a-new-concept">Create a new concept</h1>
 
 <p>Change to the tab <strong>Concepts</strong> and click on the button <strong>Create Concept</strong>.</p>
 
-<p><img src="https://www.dropbox.com/s/qtdnwvibqci3vye/4CreateConcept.png?dl=1" alt="" /></p>
+<p><img src="/images/10CreateConcept.png" alt="" /></p>
 
 <h2 id="create-your-own-vocabulary">Create your own vocabulary</h2>
 
 <p>Click on <strong>Vocabulary</strong> in the navigation menu to see the currently existing vocabularies. You can create a new one if required.</p>
 
-<p><img src="https://www.dropbox.com/s/2979klzrzhfum7e/1Vocabulary.png?dl=1" alt="" /></p>
+<p><img src="/images/11CreateConceptSet.png" alt="" /></p>
 
 <p>Fill in a label, a description and add at least one concept to your new vocabulary.</p>
 
 <p>In the following example, we create the vocabulary <strong>research institutions</strong>. This vocabulary contains two concepts: Person and Institution.</p>
 
-<p><img src="https://www.dropbox.com/s/p2271zf1gaukd9c/3CreateNewV.png?dl=1" alt="" /></p>
+<p><img src="/images/12NewConceptSet.png" alt="" /></p>
 
 
 </div>
