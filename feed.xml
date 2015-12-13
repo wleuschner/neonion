@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>neonion - Collaborative Semantic Annotations</title>
+    <description>neonion is a user-centered, web application for the collaborative annotation of texts developed at the Human-Centered Computing group at Freie Universität Berlin.
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Dec 2015 14:12:31 +0100</pubDate>
-    <lastBuildDate>Sun, 13 Dec 2015 14:12:31 +0100</lastBuildDate>
+    <pubDate>Sun, 13 Dec 2015 17:05:51 +0100</pubDate>
+    <lastBuildDate>Sun, 13 Dec 2015 17:05:51 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
