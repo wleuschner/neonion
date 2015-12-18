@@ -7,11 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>neonion - Collaborative Semantic Annotations</title>
-  <meta name="description" content="neonion is a user-centered, web application for the collaborative annotation of texts developed at the Human-Centered Computing group at Freie Universität Berlin.
-">
+  <meta name="description" content="neonion is a user-centered, web application for the collaborative annotation of texts developed at the Human-Centered Computing group at Freie Universität Berlin.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://sklind.github.io/">
   <link rel="alternate" type="application/rss+xml" title="neonion - Collaborative Semantic Annotations" href="http://sklind.github.io/feed.xml">
 </head>
 
@@ -36,10 +34,6 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">About</a>
-          
-        
-          
         
           
         
@@ -58,21 +52,14 @@
         <div class="home">
 
     
-    <h1 id="neonion-tutorial">Neonion Tutorial</h1>
-
-<p>The following tutorial explains step by step how to get started with neonion. If you want to run it on your machine, please follow the <a href="https://github.com/FUB-HCC/neonion/tree/master">install instructions</a> before continuing.</p>
+    <p>The following user manual explains step by step how to get started with neonion. If you want to run it on your machine, please follow the <a href="https://github.com/FUB-HCC/neonion/tree/master">install instructions</a> before continuing.</p>
 
 <p>You will learn</p>
 
 <ul>
   <li>how to register and login</li>
   <li>how to import a document</li>
-  <li>how to use the user interface
-    <ul>
-      <li>the tool bar</li>
-      <li>the context bar</li>
-    </ul>
-  </li>
+  <li>how to use the annotator interface</li>
   <li>how to annotate
     <ul>
       <li>which annotation modes are available</li>
@@ -80,20 +67,21 @@
   </li>
   <li>how to gain a deeper insight from your annotations
     <ul>
-      <li>giving an overview of your annotations</li>
-      <li>possibility of exporting your annotations via CSV</li>
+      <li>giving an overview of all annotations</li>
+      <li>possibility of exporting all annotations via CSV</li>
     </ul>
   </li>
   <li>how to create your own vocabulary</li>
 </ul>
 
-<h1 id="login">Login</h1>
+<h1 id="register-and-login">Register and Login</h1>
 
 <p>Open the registration page <a href="http://neonion-new.imp.fu-berlin.de/accounts/register">here</a>. On the navigation bar to the left, you can choose to <strong>Sign Up</strong>, if you don’t already have an account. Once you registered with your email address and a password, you can change to the <strong>Sign In</strong> tab to login.</p>
 
-<p><img src="/neonion-internal/images/1SignUp.png" alt="" /></p>
+<p><img src="images/1SignUp.png" alt="" />
+<em>registration page</em></p>
 
-<h1 id="import-a-document-to-your-workspace">Import a document to your workspace</h1>
+<h1 id="import-a-document-to-your-workspace">Import a Document to Your Workspace</h1>
 
 <p>After logging into neonion, you can import the document you want to annotate. Supported formats are text files and PDFs. The workspace is divided into three parts:</p>
 
@@ -103,21 +91,24 @@
   <li>Groups: these are all the documents that were uploaded in groups that you belong to</li>
 </ul>
 
-<p>Public and group workspaces enable to work on a document collaboratively.</p>
+<p>Public and group workspaces enable you to work on a document collaboratively.</p>
 
-<p><img src="/neonion-internal/images/2Workspace.png" alt="" /></p>
+<p><img src="/images/2Workspace.png" alt="" />
+<em>workspaces</em></p>
 
 <p>In this example, we will open the document <strong>Plato - Wikipedia</strong> in the <strong>Public</strong> workspace.</p>
 
-<p><img src="/neonion-internal/images/3PublicDocs.png" alt="" /></p>
+<p><img src="/images/3PublicDocs.png" alt="" />
+<em>documents in public workspace</em></p>
 
-<h1 id="user-interface">User Interface</h1>
+<h1 id="annotator-user-interface">Annotator User Interface</h1>
 
-<p>This is the annotation interface with the context bar on the top and the tool bar to the left.</p>
+<p>This is the annotator interface with the context bar on the top and the tool bar to the left.</p>
 
-<p><img src="/neonion-internal/images/4Interface.png" alt="" /></p>
+<p><img src="/images/4Interface.png" alt="" />
+<em>annotator interface</em></p>
 
-<h2 id="tool-bar">tool bar</h2>
+<h2 id="tool-bar">Tool Bar</h2>
 
 <p>The <strong>tool bar</strong> provides several tools to support the annotation process. The symbols are explained top down.</p>
 
@@ -128,7 +119,7 @@
   <li><strong>Jump to last Annotation</strong>: brings you to the last created annotation in this text</li>
 </ul>
 
-<h2 id="context-bar">context bar</h2>
+<h2 id="context-bar">Context Bar</h2>
 
 <p>The <strong>context bar</strong> shows detailed information about this specific document.</p>
 
@@ -152,98 +143,111 @@
 
 <h3 id="switch-annotation-mode">Switch Annotation Mode</h3>
 
-<p>You can switch the annotation mode through the tool bar or via the shortcuts.</p>
+<p>You can switch the annotation mode through the tool bar or via the shortcuts. The color of the annotation indicates the applied annotation mode: orange for Comments, yellow for Highlights and green for Concept Tags</p>
 
-<p><img src="/neonion-internal/images/5AnnotationMode.png" alt="" /></p>
+<p><img src="/images/5AnnotationMode.png" alt="" />
+<em>annotation modes</em></p>
 
-<h3 id="add-highlights">Add Highlights</h3>
+<h3 id="create-highlights">Create Highlights</h3>
 
-<p>Important text passages can be highlighted.</p>
+<p>Important text passages can be highlighted in order to structure the text.</p>
 
-<p><img src="/neonion-internal/images/5_1Highlight.png" alt="" /></p>
+<p><img src="/images/5_1Highlight.png" alt="" />
+<em>add a highlight</em></p>
 
-<h3 id="add-comments">Add Comments</h3>
+<h3 id="create-comments">Create Comments</h3>
 
 <p>You can also add a comment to a specific part of the text.</p>
 
-<p><img src="/neonion-internal/images/5_2Comment.png" alt="" /></p>
+<p><img src="/images/5_2Comment.png" alt="" />
+<em>add a comment</em></p>
 
-<p>If you hover over a comment, you can see the added text as well as the person who annotated this phrase.</p>
+<p>If you hover over a comment, you can see the added text as well as the person who annotated this phrase. In addition, you have the option to edit or delete the comment.</p>
 
-<p><img src="/neonion-internal/images/5_3Hover.png" alt="" /></p>
+<p><img src="/images/5_3Hover.png" alt="" />
+<em>hover over annotation</em></p>
 
 <h3 id="concept-tagging">Concept Tagging</h3>
 
-<p>Assign a concept to a specific text part. In the following example, we assign the concept <strong>association</strong> (Zusammenschluss) to the <strong>Max-Planck-Gesellschaft</strong>.</p>
+<p>Assign a concept to a specific text part. In the following example, we assign the concept <strong>consortium</strong> to the <strong>Max-Planck-Gesellschaft</strong>.</p>
 
-<p><img src="/neonion-internal/images/5_4ConceptTagging.png" alt="" /></p>
+<p><img src="/images/5_4ConceptTagging.png" alt="" />
+<em>add concept tag to a text part</em></p>
 
 <p>Text parts assigned to the concept <strong>person</strong> can be further identified with a specific person by using a linked data identifier such as the Wikidata Identifier. If there’s no matching suggestion, the person can be categorized as <strong>Unknown Resource</strong>.</p>
 
 <p>Here, we link <strong>Otto Hahn</strong> to <strong>Otto Hahn *1879-03-08 deutscher Chemiker und Nobelpreisträger</strong> from Wikidata.</p>
 
-<p><img src="/neonion-internal/images/5_5ConceptTagging.png" alt="" /></p>
+<p><img src="/images/5_5ConceptTagging.png" alt="" /></p>
 
-<p>In the third step, we can create a link between two entities through a predicate. The possibile predicates for each concept were previously defined in a vocabulary.</p>
+<p>In the third step, we can create a relation between two entities. The possibile relations for each concept are defined in the vocabulary.</p>
 
-<p><img src="/neonion-internal/images/6AddProperty.png" alt="" /></p>
+<p><img src="/images/6AddProperty.png" alt="" /></p>
 
-<h1 id="gain-a-deeper-insight-from-your-annotations">Gain a deeper insight from your annotations</h1>
+<h1 id="gain-a-deeper-insight-from-your-annotations">Gain a Deeper Insight From Your Annotations</h1>
 
 <p>The annotation overview enables you to analyze your results in more depth. On the page of the concept tags, annotations are grouped by concept and then by concept name.</p>
 
-<h2 id="overview-of-annotations">overview of annotations</h2>
+<h2 id="overview-of-annotations">Overview of Annotations</h2>
 
-<p><img src="/neonion-internal/images/7AnnotationsOverview.png" alt="" /></p>
+<p><img src="/images/7AnnotationsOverview.png" alt="" />
+<em>annotation overview</em></p>
 
 <p>The overview gives you further details about every single annotation. You can see how many times a specific concept name has been annotated in how many different documents and when a concept name was annotated for the last time.</p>
 
-<h2 id="csv-export">CSV export</h2>
+<h2 id="csv-export">CSV Export</h2>
 
 <p>To enable the reuse of your annotations, you have the possibility of exporting all annotations including metadata via CSV.</p>
 
-<p><img src="/neonion-internal/images/7_1CSVexport.png" alt="" /></p>
+<p><img src="/images/7_1CSVexport.png" alt="" />
+<em>download CSV file</em></p>
 
-<p><img src="/neonion-internal/images/7_2CSVfile.png" alt="" /></p>
+<p><img src="/images/7_2CSVfile.png" alt="" />
+<em>metadata in CSV file</em></p>
 
 <h1 id="vocabularies">Vocabularies</h1>
 
-<p>You can choose an existing vocabulary or create your own before you start annotating. Every vocabulary must at least contain one concept and every concept can have assigned properties.</p>
+<p>In order to allow Concept Tagging, we can define our own taxonomy with the aid of controlled vocabularies. You can choose an existing vocabulary or create your own before you start annotating. The default vocabulary contains the entitites Consortium, Date, Institution, Person and Person Function. Every vocabulary must at least contain one concept and every concept can have assigned properties.</p>
 
-<h2 id="create-a-new-property">Create a new property</h2>
+<h2 id="create-a-new-property">Create a New Property</h2>
 
 <p>Change to the tab <strong>Properties</strong> and click on the button <strong>Create Property</strong>.</p>
 
-<p><img src="/neonion-internal/images/8CreateProperty.png" alt="" /></p>
+<p><img src="/images/8CreateProperty.png" alt="" />
+<em>listed properties</em></p>
 
 <p>Fill in a label, a description and assign concepts that should have this property. You can additionally add the inverse property.</p>
 
-<p>In the following example, the property is <strong>member</strong> and the assigned concept <strong>Person</strong>. If we construct an inverse property called <strong>member of</strong> with the assigned concept <strong>Institution</strong>, we are then able to construct two relationships:</p>
+<p><img src="/images/9Property.png" alt="" />
+<em>create a new property</em></p>
+
+<p>In the example above, the property is <strong>member</strong> and the assigned concept <strong>Person</strong>. If we construct an inverse property called <strong>member of</strong> with the assigned concept <strong>Institution</strong>, we are then able to construct two relationships:</p>
 
 <ol>
   <li><strong>Person</strong> is <strong>member of</strong> an <strong>Institution</strong></li>
   <li><strong>Institution</strong> has <strong>member</strong> <strong>Person</strong></li>
 </ol>
 
-<p><img src="/neonion-internal/images/9Property.png" alt="" /></p>
-
-<h1 id="create-a-new-concept">Create a new concept</h1>
+<h1 id="create-a-new-concept">Create a New Concept</h1>
 
 <p>Change to the tab <strong>Concepts</strong> and click on the button <strong>Create Concept</strong>.</p>
 
-<p><img src="/neonion-internal/images/10CreateConcept.png" alt="" /></p>
+<p><img src="/images/10CreateConcept.png" alt="" />
+<em>create a new concept</em></p>
 
-<h2 id="create-your-own-vocabulary">Create your own vocabulary</h2>
+<h2 id="create-your-own-vocabulary">Create Your Own Vocabulary</h2>
 
 <p>Click on <strong>Vocabulary</strong> in the navigation menu to see the currently existing vocabularies. You can create a new one if required.</p>
 
-<p><img src="/neonion-internal/images/11CreateConceptSet.png" alt="" /></p>
+<p><img src="/images/11CreateConceptSet.png" alt="" />
+<em>listed vocabularies</em></p>
 
 <p>Fill in a label, a description and add at least one concept to your new vocabulary.</p>
 
 <p>In the following example, we create the vocabulary <strong>research institutions</strong>. This vocabulary contains two concepts: Person and Institution.</p>
 
-<p><img src="/neonion-internal/images/12NewConceptSet.png" alt="" /></p>
+<p><img src="/images/12NewConceptSet.png" alt="" />
+<em>create a new concept set</em></p>
 
 
 </div>
@@ -279,8 +283,7 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>neonion is a user-centered, web application for the collaborative annotation of texts developed at the Human-Centered Computing group at Freie Universität Berlin.
-</p>
+        <p>neonion is a user-centered, web application for the collaborative annotation of texts developed at the Human-Centered Computing group at Freie Universität Berlin.</p>
       </div>
     </div>
 
